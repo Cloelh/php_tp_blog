@@ -1,0 +1,298 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+.logo{
+    font-family: 'Parisienne', cursive;
+    font-size: 2.7em;
+    color: #964e4e;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+    color: #171717 !important;
+}
+    a:hover{
+        color: #964e4e !important;
+    }
+
+/* OOCSS */
+
+/* flex */
+.d-flex{display: flex;}
+.f-dirCol{flex-direction: column;}
+.f-dirRow{flex-direction: row;}
+.f-jusContent-center{justify-content: center;}
+.f-jusContent-around{justify-content: space-around;}
+.f-jusContent-between{justify-content: space-between;}
+.f-alignItems-center{align-items: center;}
+.f-center{justify-content: center; align-items: center;}
+.f-wrap{flex-wrap: wrap;}
+
+/* color */
+.light{color: #ededed;}
+.BgLight{background-color: #ededed;}
+.dark{color: #171717;}
+.BgDark{background-color: #171717;}
+.pink{color: #964e4e;}
+.green{color: #4e9661;}
+.blue{color: #4e6b96;}
+
+
+/* NAV */
+nav{
+    height: 11vh;
+    padding-left:100px !important;
+    padding-right:100px !important;
+}
+
+    nav .link{
+        width: 700px;
+    }
+
+        nav .item{
+            width: 120px;
+        }
+
+            nav .item .underline{
+                content: "";
+                height: 2px;
+                width: 0px;
+            }
+
+            nav .item:hover a{
+                color: #964e4e !important;            
+            }
+
+            nav .item:hover .underline{
+                content: "";
+                height: 2px;
+                width: 70px;
+                animation: underline ease-in .2s;
+                background-color: #964e4e;
+            }
+
+                @keyframes underline{
+                    from{opacity: 0; width: 0px;}
+                    to{opacity: 1; width: 70px;}
+                }
+
+/* HOME */
+.home-content{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-top: 50px;
+}
+
+.banner{
+    height: 50vh;
+    background-size: cover;
+    background-position:center;
+}
+    .banner-content{
+        background-color: rgba(0,0,0, .6);
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-content a{
+        color: #ededed !important;
+    }
+    .banner-content a:hover{
+        color: #964e4e !important;
+    }
+
+    
+    
+/* CONNEXION / INSCRIPTION */
+.login{
+    min-height: 85vh;
+}
+
+    .connexion, .inscription{
+        width: 400px;
+        height: 500px;
+        padding: 30px !important;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+        .connexion input, .inscription input{
+            background-color: #171717;
+            color: #ededed;
+            border: #ededed 1px solid;
+            margin-bottom: 10px;
+        }
+
+        .connexion .btn, .inscription .btn{
+            background-color: #ededed !important;
+            color: #964e4e !important;
+            border-color: #964e4e !important;
+        }
+
+/* card article */
+.card-article{
+    width: 240px;
+    height: 240px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    margin-right: 8px;
+}
+    .card-article-content{
+        background-color: rgba(0,0,0, .4);
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-article:hover .card-article-content{
+        background-color: rgba(0,0,0, .2);
+    }
+
+/* page continent */
+.pageContinent-content{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* page pays */
+.pagePays-content{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* page article */
+.pageArticle-content{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+    .pageArticle-content .contenu-article{
+        background-color: #ededed;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 100px;
+        padding-left: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pageArticle-content .commentaire{
+        padding: 10px;
+        border: black solid 1px;
+    }
+
+    .pageArticle-content .addCom{
+        background-color: #ededed;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+        .pageArticle-content .addCom input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+/* page nouvel article */
+.nouvelArticle-content{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+    .nouvelArticle-content .form-group{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #ededed;
+    }
+
+/* page edit */
+.pageEdit-content{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+    .pageEdit-content .form-group{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #ededed;
+    }
+
+/* page admin */
+.pageAdmin-content{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* liste continent */
+.listContinent{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+    .listContinent .item{
+        width: 240px;
+        height: 100px;
+    }
+
+
+        .listContinent .item .item-content{
+            background-color: rgba(0,0,0, .4);
+            height: 100%;
+            width: 100%;
+        }
+
+        .listContinent .item:hover .item-content{
+            background-color: rgba(0,0,0, .1);
+        }
+/* liste pays */
+.listPays{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+    .listPays .item{
+        width: 240px;
+        height: 100px;
+        margin-right: 8px;
+    }
+
+
+        .listPays .item .item-content{
+            background-color: rgba(0,0,0, .4);
+            height: 100%;
+            width: 100%;
+        }
+
+        .listPays .item:hover .item-content{
+            background-color: rgba(0,0,0, .1);
+        }
+
+
+
+/* FOOTER */
+footer{
+    height: 4vh;
+    width: 100%;
+}
